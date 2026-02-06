@@ -119,6 +119,55 @@ img {
 .social-icons a:nth-child(3):hover { color: #ffffff; } /* TikTok */
 .social-icons a:nth-child(4):hover { color: #E1306C; } /* Instagram */
 
+
+
+
+/* =========================
+   SAYFA BAŞLIĞI
+========================= */
+
+.page-title {
+  background-color: #f8f9fa;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 15px; /* navbar fixed ise */
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #212529;
+}
+
+
+/* =========================
+  BUTONLAR
+========================= */
+
+.more-section {
+  padding: 60px 0 30px;
+  background-color: #f8f9fa;
+}
+
+.more-btn {
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgb(0, 0, 255, 5);
+  color: #fff;
+  background: rgb(0, 0, 255);
+}
+
 /* RESPONSIVE */
 @media (max-width: 767.98px) {
   .hero {
@@ -141,6 +190,7 @@ img {
   }
 }
 
+
 /* Tablet & Desktop (768px+) */
 @media (min-width: 768px) {
   .product-card {
@@ -149,24 +199,8 @@ img {
 }
 
 /* =========================
-   SAYFA BAŞLIĞI
+   ANA SAYFA Mobil
 ========================= */
-
-.page-title {
-  background-color: #f8f9fa;
-  padding: 25px 0;
-  text-align: center;
-  margin-top: 15px; /* navbar fixed ise */
-}
-
-.page-title h1 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 600;
-  color: #212529;
-}
-
-/* MOBİL */
 @media (max-width: 576px) {
   .page-title h1 {
     font-size: 22px;
@@ -174,38 +208,25 @@ img {
 }
 
 /* =========================
-   DAHA FAZLA BUTONU
+   ÜRÜNLER SAYFASI Mobil
 ========================= */
-
-.more-section {
-  padding: 60px 0 30px;
-  background-color: #f8f9fa;
-}
-
-.more-btn {
-  padding: 14px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 50px;
-  background-color: #0d6efd;
-  color: #fff;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.more-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(13, 110, 253, 0.35);
-  color: #fff;
-}
-
-/* MOBİL */
 @media (max-width: 576px) {
   .more-btn {
     font-size: 16px;
     padding: 12px 32px;
   }
 }
+
+
+/* =========================
+   İLETİŞİM SAYFASI Mobil
+========================= */
+@media (max-width: 576px) {
+  .contact-item i {
+    font-size: 36px;
+  }
+}
+
 
 /* =========================
    İLETİŞİM SAYFASI
@@ -243,13 +264,6 @@ img {
 .contact-item:nth-child(3) a:hover { color: #E1306C; }
 .contact-item:nth-child(4) a:hover { color: #000000; }
 
-/* Mobil */
-@media (max-width: 576px) {
-  .contact-item i {
-    font-size: 36px;
-  }
-}
-
 .fade-in-scroll {
   opacity: 0;
   transform: translateY(40px);
@@ -261,3 +275,6 @@ img {
   transform: translateY(0);
 }
 
+.ejderhalar{
+  object-position: left;
+}
